@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HodlInfo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">HODLINFO</div>
+      <div class="nav-links">
+        <a href="#">INR</a>
+        <a href="#">BTC</a>
+        <a href="#">BUY BTC</a>
+      </div>
+      <div class="actions">
+        <button class="toggle-button">39</button>
+        <button class="telegram-button">Connect Telegram</button>
+        <div class="toggle-switch">
+          <input type="checkbox" id="toggle">
+          <label for="toggle"></label>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div id="app">
+    <div id="highlight">
+      <div class="highlight-item" id="left-highlight">
+        <p><span id="left-last"></span> | <span id="left-buy"></span></p>
+      </div>
+      <div class="highlight-item" id="center-highlight">
+        <h1 id="center-title"></h1>
+        <p id="center-price"></p>
+      </div>
+      <div class="highlight-item" id="right-highlight">
+        <p><span id="right-sell"></span> | <span id="right-volume"></span></p>
+      </div>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Platform</th>
+          <th>Last Traded Price</th>
+          <th>Buy / Sell Price</th>
+          <th>Difference</th>
+          <th>Savings</th>
+        </tr>
+      </thead>
+      <tbody id="data-table">
+        <!-- Data will be populated here -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
